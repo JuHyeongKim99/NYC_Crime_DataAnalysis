@@ -36,7 +36,7 @@ def ordinal_label_encoder(df):
 
     return df_ordinal, df_label
 
-def regression_model(scaler, X, y, model, train_size_val, random_state_val):
+def regression_model (scaler, X, y, model, train_size_val, random_state_val):
     scaler.fit(X)
     X = scaler.transform(X)
 
