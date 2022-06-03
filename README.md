@@ -5,6 +5,36 @@ By Team member WonJae Lee, JuHyeong Kim, KyeongMin Lee
 
 Our team conducted NYC crime data analysis for academic purpose using regression and clustering model 
 
+# Function Description (Automatic Regression)
+
+ordinal_label_encoder(df):
+
+  return: df_ordinal, df_label 
+  
+  oridnal_label_encoder method takes argument of dataframe, and encodes categorical data with ordinal, label encoder.
+  This function then returns two dataframe each encoded with ordinal, label encoder
+
+regresison_model(scaler, X, y, model, train_size_val, random_state_val):
+  
+  return: accuracy
+  
+regression_best_model(df, selected_features, target, train_size_val, random_state_val):
+
+  return: best accuracy(float), best scaler(text), best encoder(text), best regression(text)
+  
+  ![image](https://user-images.githubusercontent.com/90828283/171909682-d5b756d7-3d69-43e0-8a55-f219d2068ae9.png)
+
+  
+  regression_best_model method takes argument of dataframe, list of features to train, target feature, train size, random size
+  It returns best accuracy and combination by trying every combination of
+  
+  Standard scaler, Robust Scaler, MaxabsScaler
+  
+  Label encoder, Ordinal encoder
+  
+  Linear, Polynomial, DecisionTreeClassifier regression
+  
+
 # File description
 
 NYC_crime.ipynb : Source code & description & result screen
